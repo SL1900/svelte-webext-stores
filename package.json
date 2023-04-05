@@ -1,6 +1,6 @@
 {
-  "name": "svelte-webext-stores",
-  "version": "0.0.13",
+  "name": "@livetl/svelte-webext-stores",
+  "version": "0.0.14",
   "description": "Svelte stores that synchronizes to WebExtension storage.",
   "keywords": [
     "svelte",
