@@ -1,7 +1,7 @@
 import typescript from 'rollup-plugin-typescript2';
 import dts from 'rollup-plugin-dts';
 import cleaner from 'rollup-plugin-cleaner';
-import pkg from './package.json';
+import pkg from './package.json' with { type: "json" };
 import del from 'rollup-plugin-delete';
 
 const config = [
@@ -34,7 +34,7 @@ const config = [
       format: 'es'
     },
     plugins: [
-      dts(),
+      dts.default(),
       del({
         targets: [
           './dist/**/*.d.ts',
